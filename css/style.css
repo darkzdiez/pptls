@@ -1,0 +1,28 @@
+body{
+	background-color: #333366;
+    color: #FFF;
+    text-align: center;
+}
+
+select,input  {
+    outline: 0; /* ya comentare el css */
+    overflow: hidden;
+    background: #666699;
+    color: #747a80;
+    border: #666699;
+    padding: 5px 3px 5px 10px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 6px;
+    width: 100%;
+    color: #FFF;
+}
+
+select option {
+	border: 1px solid #000;
+	background: #666699;
+    padding: 6px;
+    color: #FFF;
+}
+

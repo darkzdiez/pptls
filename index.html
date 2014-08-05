@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Piedra, Papel, Tijera, Lagarto, Spock.</title>
-	<script type="text/javascript" src="js/ppt.js"></script>
-</head>
-<body>
+	<head>
+		<title>Piedra, Papel, Tijera, Lagarto, Spock.</title>
+		<script type="text/javascript" src="js/ppt.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
 
-	<h1>Piedra, Papel, Tijera, Lagarto, Spock.</h1>
+		<h1>Piedra, Papel, Tijera, Lagarto, Spock.</h1>
 
-		<select id="opcion">
-			<option value="0">Piedra</option>
-			<option value="1">Papel</option>
-			<option value="2">Tijera</option>
-			<option value="3">Lagarto</option>
-			<option value="4">Spock</option>
-		</select>
-		<br>
-		<input type="submit" onclick="jugar()" value="Enviar">
-</body>
+		<table>
+			<thead>
+				<tr>
+					<th>Victorias</th>
+					<th>Empates</th>
+					<th>Derotas</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="victorias">0</td>
+					<td id="empates">0</td>
+					<td id="derrotas">0</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id="mainselection">
+			<select id="opcion">
+				<option value="0">Piedra</option>
+				<option value="1">Papel</option>
+				<option value="2">Tijera</option>
+				<option value="3">Lagarto</option>
+				<option value="4">Spock</option>
+			</select>
+		</div>
+		<br> <!-- Salto de linea -->
+		<input class="boton" type="submit" onclick="jugar()" value="Enviar"> <!-- Boton que ejecuta el juego al hacer click, gracias al atributo onclick que puede ejecutar funciones javascript -->
+		<br> <!-- Salto de linea -->
+		<img src="img/piedra-papel-tijeras-lagarto-spock.png">
+	</body>
 </html>

@@ -1,5 +1,8 @@
 var opciones = ["Piedra", "Papel", "Tiejera", "Lagarto", "Spock"];
 //					0		1			2			3		4
+var victorias = 0;
+var Empates = 0;
+var Derrotas = 0;
 function calcular(sistema, usuario){
 	tablaFuerza = [
 		[ // Esto es piedra 0
@@ -20,9 +23,15 @@ function calcular(sistema, usuario){
 	];
 	if(sistema == usuario){
 		alert('Empate\nUsuario: ' + opciones[usuario] + '\nSistema: ' + opciones[sistema]);
+		Empates++;
+		document.getElementById('empates').innerHTML = Empates;
 	}else if (tablaFuerza[usuario][0].indexOf(sistema) > -1){
+		victorias++;
+		document.getElementById('victorias').innerHTML = victorias;
 		alert('Ganaste\nUsuario: ' + opciones[usuario] + '\nSistema: ' + opciones[sistema]);
 	}else{
+		Derrotas++;
+		document.getElementById('derrotas').innerHTML = Derrotas;
 		alert('Perdiste\nUsuario: ' + opciones[usuario] + '\nSistema: ' + opciones[sistema]);
 	}
 	console.log(tablaFuerza);
