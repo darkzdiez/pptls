@@ -4,23 +4,18 @@ function calcular(sistema, usuario){
 	tablaFuerza = [
 		[ // Esto es piedra 0
 			[2,3], // Gana a Tiejera 2 y Largarto 3
-			[1,4] // Pero Pierde ante Papel 1 y Spock 4
 		],
 		[ // Esto es Papel 1
 			[0,4], // Gana a Piedra 0 y Spock 4
-			[2,3] // Pero Pierde ante Tiejera 2 y Lagarto 3
 		],
 		[ // Esto es Tiejeras 2
 			[1,3], // Gana a Papel 1 y Lagarto 3
-			[0,4] // Pero Pierde ante Piedra 0 y Spock 4
 		],
 		[ // Esto es Lagarto 3
 			[1,4], // Gana a Papel 1 y Spock 4
-			[0,2] // Pero Pierde ante Piedra 0 y Tiejera 2
 		],
 		[ // Esto es Spock 4
 			[0,2], // Gana a Piedra 0 y Tiejera 2
-			[1,3] // Pero Pierde ante Papel 1 y Lagarto 3
 		]
 	];
 	if(sistema == usuario){
